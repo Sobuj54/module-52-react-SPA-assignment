@@ -3,8 +3,9 @@ import './Header.css'
 
 const Header = () => {
     return (
-        <div>
-            <h2>this is header component.</h2>
+        <div className='header'>
+            <h2>Knowledge Cafe</h2>
+            <img src="newcomer-get-know-teammates-pleased-good-looking-businesswoman-transparent-glasses-blue-collar-shirt-smiling-broadly-assuring-good-quality-product-gray-wall" alt="" />
         </div>
     );
 };
