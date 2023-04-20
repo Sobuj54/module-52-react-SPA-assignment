@@ -1,0 +1,30 @@
+[
+    {
+    "id": 1,
+    "authorName": "John Smith",
+    "blogTitle": "How to get your first job as a self-taught programmer",
+    "authorImg": "https://img.freepik.com/free-photo/young-bearded-man-with-striped-shirt_273609-5677.jpg?w=740&t=st=1682007038~exp=1682007638~hmac=8e825f3e10c98e9a8cf0cd2cda5d4221827bdaa5d7a0623405c7f2a44dd8f217",
+    "blogImg":"https://as2.ftcdn.net/v2/jpg/04/19/89/39/1000_F_419893950_XY2aVUT5S5cPObSXOWFpBMi8da9jtMfH.jpg"
+  },
+    {
+    "id": 2,
+    "authorName": "Sarah Elton",
+    "blogTitle": "How to get an internship",
+    "authorImg": "https://img.freepik.com/free-photo/cheerful-curly-business-girl-wearing-glasses_176420-206.jpg?w=740&t=st=1682007086~exp=1682007686~hmac=4b4372753793b732cfd9f5525cb3cc9ad4451d720d71421dff2ad9d340b93955",
+    "blogImg":"https://as2.ftcdn.net/v2/jpg/02/83/46/33/1000_F_283463385_mfnrx6RPU3BqObhVuVjYZjeZ5pegE7xq.jpg"
+  },
+    {
+    "id": 3,
+    "authorName": "Brook Pirate",
+    "blogTitle": "How to prepare for interview",
+    "authorImg": "https://img.freepik.com/free-photo/waist-up-portrait-handsome-serious-unshaven-male-keeps-hands-together-dressed-dark-blue-shirt-has-talk-with-interlocutor-stands-against-white-wall-self-confident-man-freelancer_273609-16320.jpg?w=740&t=st=1682007120~exp=1682007720~hmac=c49921d84a08b5800a380fd8b91e9a9cf077274043c3a326da1e29bf0dc744ae",
+    "blogImg":"https://as2.ftcdn.net/v2/jpg/02/78/33/57/1000_F_278335772_JkLlIynyeRhJr2CJgzkGP9o9rPRosQj1.jpg"
+  },
+    {
+    "id": 4,
+    "authorName": "George Muller",
+    "blogTitle": "How to increase productivity",
+    "authorImg": "https://img.freepik.com/free-photo/handsome-confident-smiling-man-with-hands-crossed-chest_176420-18743.jpg?w=740&t=st=1682007170~exp=1682007770~hmac=c143911a14a392d6e182a319570b729bbdea23b3a87611baf868cc39a7a9baab",
+    "blogImg":"https://img.freepik.com/free-photo/rear-view-programmer-working-all-night-long_1098-18697.jpg?w=740&t=st=1682006986~exp=1682007586~hmac=cc11e425fada1575686b86b5b305b6101cddd6579786e85b7c81f831739a33b5"
+  }
+]
