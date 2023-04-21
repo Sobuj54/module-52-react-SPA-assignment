@@ -1,5 +1,5 @@
 .blogs-container{
     display: grid;
-    grid-template-columns: 4fr 1fr;
-    margin: 0 100px;
+    grid-template-columns: 4fr 2fr;
+    margin: 0 50px 0 50px;
 }
