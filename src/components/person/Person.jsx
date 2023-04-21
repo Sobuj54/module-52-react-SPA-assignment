@@ -6,7 +6,7 @@ const Person = (props) => {
     return (
         <div className='container'>
             <div className='user'>
-                {/* <img src={authorImg} alt="" /> */}
+                <p style={{backgroundImage:`url(${authorImg})`}}></p>
                 <p>{authorName}</p>
             </div>
             <div className='time'>

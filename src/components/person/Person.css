@@ -1,8 +1,9 @@
 .user{
     display: flex;
+    gap: 25px;
 }
-.user img{
+.user p{
     width: 60px;
-height: 60px;
-
+    height: 60px;
+    border-radius: 50%;
 }
