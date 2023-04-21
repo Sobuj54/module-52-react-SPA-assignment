@@ -7,7 +7,7 @@ const Blog = (props) => {
     return (
         <div className='blog'>
             <img src={blogImg} alt="" />
-            <Person user={props.blog}></Person>
+            <Person user={props.blog} addToBookmark={props.addToBookmark}></Person>
             <h3>{blogTitle}</h3>
             
             <div className='hash'>
