@@ -1,9 +1,32 @@
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 .user{
     display: flex;
     gap: 25px;
+    align-items: center;
 }
-.user p{
+.user section{
     width: 60px;
     height: 60px;
     border-radius: 50%;
+}
+.name{
+    width: 146px;
+}
+.name h6{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    margin: 0;
+}
+.name p{
+    margin:  10px 0;
+}
+.time p{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
 }
