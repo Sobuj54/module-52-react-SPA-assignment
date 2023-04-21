@@ -6,6 +6,7 @@ import Bookmark from '../bookmark/Bookmark';
 const Blogs = () => {
     const [blogs, setBlogs] =useState([]);
     const [blogInfo ,setBlogInfo] =useState([]);
+    const [readTime, setReadTime] =useState(0);
 
     useEffect(()=>{
         fetch('info.json')
@@ -18,6 +19,11 @@ const Blogs = () => {
         setBlogInfo(newBlogInfo);
         console.log(newBlogInfo);
     }
+    
+    const markAsRead = (read) =>{
+        let newTime = readTime + read;
+        setReadTime(newTime);
+    }
 
     const numberOfBookmark = blogInfo.length;
     
@@ -29,15 +35,16 @@ const Blogs = () => {
                     key={blog.id}
                     blog={blog}
                     addToBookmark={addToBookmark}
+                    markAsRead={markAsRead}
                     ></Blog>)
                 }
             </div>
             <div className="bookmark-container">
-            <div className='time-spent'>Time spent on read : 177 min</div>
+            <div className='time-spent'>Time spent on read : {readTime} min</div>
             <div className='bookmark-blogs'>Bookmarked Blogs : {numberOfBookmark}
                 {
                     blogInfo.map(blog => <Bookmark 
-                        key={blog.id}
+                        key={blog.authorName}
                         blogInfo={blog}
                         numberOfBookmark={numberOfBookmark}></Bookmark>)
                 }

@@ -3,7 +3,8 @@ import './Blog.css'
 import Person from '../person/Person';
 
 const Blog = (props) => {
-    const {blogImg, authorName, blogTitle, authorImg} = props.blog;
+    const {blogImg, authorName, blogTitle, authorImg,read} = props.blog;
+    const markAsRead = props.markAsRead;
     return (
         <div className='blog'>
             <img src={blogImg} alt="" />
@@ -14,7 +15,7 @@ const Blog = (props) => {
                 <p>#beginners</p>
                 <p>#programming</p>
             </div>
-            <p className='mark'>Mark as read</p>
+            <p onClick={()=>markAsRead(read)} className='mark'>Mark as read</p>
         </div>
     );
 };
