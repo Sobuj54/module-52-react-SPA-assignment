@@ -9,6 +9,12 @@ const Blog = (props) => {
             <img src={blogImg} alt="" />
             <Person user={props.blog}></Person>
             <h3>{blogTitle}</h3>
+            
+            <div className='hash'>
+                <p>#beginners</p>
+                <p>#programming</p>
+            </div>
+            <p className='mark'>Mark as read</p>
         </div>
     );
 };

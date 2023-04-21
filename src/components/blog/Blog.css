@@ -1,8 +1,33 @@
 .blog{
     width: 845px;
-    height: 821px;
+    height: 845px;
+   
 }
 .blog img{
     width: 100%;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+}
+.blog h3{
+    font-family: 'Exo 2';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 160%;
+    color: #111111;
+    margin: 10px 0px;
+}
+.mark{
+    font-family: 'Exo 2';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    text-decoration-line: underline;
+    color: #6047EC;
+    margin: 10px 0;
+}
+.hash{
+    display: flex;
+    gap: 10px;
 }

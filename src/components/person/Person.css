@@ -16,10 +16,10 @@
 .name{
     width: 146px;
 }
-.name h6{
+.name div{
     font-style: normal;
     font-weight: 700;
-    font-size: 24px;
+    font-size: 20px;
     margin: 0;
 }
 .name p{

@@ -10,7 +10,7 @@ const Person = (props) => {
             <div className='user'>
                 <section style={{backgroundImage:`url(${authorImg})`}}></section>
                 <div className='name'>
-                    <h6>{authorName}</h6>
+                    <div>{authorName}</div>
                     <p>{date}</p>
                 </div>
             </div>
