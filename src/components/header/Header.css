@@ -5,8 +5,13 @@
     margin: 50px 100px;
     align-items: center;
 }
-.header img{
+/* .header img{
     width: 60px;
     height: 60px;
-   
+    border-radius: 50%;
+} */
+.header p{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
 }
