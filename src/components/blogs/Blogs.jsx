@@ -20,7 +20,7 @@ const Blogs = () => {
     }
 
     const numberOfBookmark = blogInfo.length;
-    console.log(numberOfBookmark);
+    
     return (
         <div className='blogs-container'>
             <div className="blog-container">
@@ -33,13 +33,15 @@ const Blogs = () => {
                 }
             </div>
             <div className="bookmark-container">
+            <div className='time-spent'>Time spent on read : 177 min</div>
+            <div className='bookmark-blogs'>Bookmarked Blogs : {numberOfBookmark}
                 {
                     blogInfo.map(blog => <Bookmark 
                         key={blog.id}
                         blogInfo={blog}
                         numberOfBookmark={numberOfBookmark}></Bookmark>)
                 }
-                
+            </div>
             </div>
         </div>
     );
