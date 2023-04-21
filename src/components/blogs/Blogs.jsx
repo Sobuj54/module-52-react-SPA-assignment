@@ -3,6 +3,7 @@ import './Blogs.css'
 import Blog from '../blog/Blog';
 import Bookmark from '../bookmark/Bookmark';
 
+
 const Blogs = () => {
     const [blogs, setBlogs] =useState([]);
     const [blogInfo ,setBlogInfo] =useState([]);
@@ -15,9 +16,13 @@ const Blogs = () => {
     },[])
 
     const addToBookmark = (info) =>{
-        let newBlogInfo = [...blogInfo,info];
-        setBlogInfo(newBlogInfo);
-        console.log(newBlogInfo);
+        console.log(info);
+        let alreadyAvailable = blogInfo.find(blog=>blog.blogTitle === info.blogTitle);
+        if(!alreadyAvailable){
+            let newBlogInfo = [...blogInfo,info];
+            setBlogInfo(newBlogInfo);
+        } 
+        // console.log(newBlogInfo);
     }
     
     const markAsRead = (read) =>{
