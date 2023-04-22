@@ -27,4 +27,17 @@
     height: 1352px;
     background: rgba(17, 17, 17, 0.05);
     border-radius: 8px;
+}
+
+@media screen and (max-width: 576px) {
+    .blogs-container{
+        display: block;
+        margin:10px;
     }
+    .time-spent{
+        width: fit-content;
+    }
+    .bookmark-blogs{
+        width: fit-content;
+    }
+  }
