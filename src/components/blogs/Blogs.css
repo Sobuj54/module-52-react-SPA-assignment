@@ -3,6 +3,10 @@
     grid-template-columns: 4fr 2fr;
     margin: 0 50px 0 50px;
 }
+.bookmark-container{
+    position: sticky;
+    top: 0;
+}
 .time-spent{
     font-family: 'Exo 2';
     font-style: normal;

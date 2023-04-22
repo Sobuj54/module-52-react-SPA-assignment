@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react';
 import './Blogs.css'
 import Blog from '../blog/Blog';
 import Bookmark from '../bookmark/Bookmark';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 const Blogs = () => {
@@ -15,6 +17,12 @@ const Blogs = () => {
         .then(data => setBlogs(data));
     },[])
 
+    const showToastMessage = () => {
+        toast.warning('You have already added this to bookmark !', {
+            position: toast.POSITION.TOP_CENTER
+        });
+    };
+
     const addToBookmark = (info) =>{
         console.log(info);
         let alreadyAvailable = blogInfo.find(blog=>blog.blogTitle === info.blogTitle);
@@ -22,6 +30,9 @@ const Blogs = () => {
             let newBlogInfo = [...blogInfo,info];
             setBlogInfo(newBlogInfo);
         } 
+        else{
+            showToastMessage();
+        }
         // console.log(newBlogInfo);
     }
     
@@ -55,6 +66,7 @@ const Blogs = () => {
                 }
             </div>
             </div>
+            <ToastContainer />
         </div>
     );
 };
